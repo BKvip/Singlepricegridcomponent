@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+      .cyan {
+        color: hsl(179, 62%, 43%);
+      }
+      .yellow {
+        color: hsl(71, 73%, 54%);
+      }
+      .gray {
+        color: hsl(204, 43%, 93%);
+      }
+      .blue {
+        color: hsl(218, 22%, 67%);
+      }
+      .fw200 {
+        font-weight: 200;
+      } 
+      .fw700 {
+        font-weight: 700;
+      }
+      span {
+        font-size: 12px;
+      }
+
+      body {
+        background-color: hsl(204, 43%, 93%);
+        font-family: "Karla", sans-serif;
+        font-weight: 400;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        font-size: 16px;
+      }
+      main {
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: start;
+        margin: auto;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px 1px #2e2e2e2b;
+        width: 600px;
+        border-radius: 0.5rem;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .container-header {
+        padding: 2rem;
+      }
+      .container-title {
+        margin: 0.5rem 0rem;
+      }
+      .container-subtitle {
+        line-height: 1.5rem;
+      }
+      .container-bottom {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: #fff;
+      }
+      .container-bottom-left {
+        padding: 2rem;
+        background-color: hsl(179, 62%, 43%);
+        line-height: 0.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .permonth {
+        font-size: 16px;
+        color: hsla(203, 44%, 93%, 0.755);
+      }
+
+      .button {
+        cursor: pointer;
+        margin-top: 2rem;
+        text-align: center;
+        background-color: hsl(71, 73%, 54%);
+        font-weight: 700;
+        padding: 1rem 0;
+        border-radius: 5px;
+      }
+
+      .container-bottom-right {
+        padding: 2rem;
+        background-color: hsl(179, 63%, 51%);
+      }
+      .container-bottom-right-subtitle {
+        line-height: 1.5;
+        margin-right: 1rem;
+      }
+      .attribution {
+        position: fixed;
+        bottom: 1em;
+        right: 0;
+        left: 0;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (max-width: 650px) {
+         
+        main {
+          text-align: start;
+          margin: auto;
+          width: 350px;
+          border-radius: 0.5rem;
+        }
+        .container-header {
+          padding: 1rem 2rem;
+        }
+        .container-bottom {
+          margin-top: 1rem;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr; 
+        } 
+        .container-bottom-right-subtitle {
+        line-height: 1.5;
+        margin-right: 0rem;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-header">
+          <h2 class="cyan">Join our community</h2>
+          <h4 class="container-title yellow">
+            30-day, hassle-free money back guarantee
+          </h4>
+          <div class="container-subtitle blue">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </div>
+        </div>
+        <div class="container-bottom">
+          <div class="container-bottom-left">
+            <h4>Monthly Subscription</h4>
+            <h1>&dollar;29 <span class="fw200 permonth">per month</span></h1>
+            <div class="container-bottom-left-subtitle fw200">
+              Full access for less than &dollar;1 a day
+            </div>
+
+            <div class="button">Sign Up</div>
+          </div>
+          <div class="container-bottom-right">
+            <h4>Why Us</h4>
+            <div class="container-bottom-right-subtitle fw200">
+              Tutorials by industry experts Peer &amp; expert code review Coding
+              exercises Access to our GitHub repos Community forum Flashcard
+              decks New videos every week
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Supakorn Klampod</a>.
+      </p>
+    </footer>
+  </body>
+</html>
